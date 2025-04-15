@@ -18,7 +18,7 @@ export default function Login() {
 
  const onSubmit=()=>{
   axiosinstance
-    .post("/auth/login", values)
+    .post("/api/auth/login", values)
     .then((res) => {
       console.log("Login successful:", res.data);
       dispatch(saveuser({ token: res.data.token }))
