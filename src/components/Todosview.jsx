@@ -15,7 +15,7 @@ const ViewTodos = () => {
 
     const fetchTodos = async () => {
       try {
-        const response = await axios.get("http://localhost:5006/api/todos", {
+        const response = await axios.get("https://todobackend-lgkp.onrender.com/api/todos", {
           headers: { Authorization: `Bearer ${tok}` }, // Send token in headers
         });
         setTodos(response.data); // Set todos state with fetched data

@@ -21,7 +21,7 @@ export default function Register() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5006/api/auth/register", formData);
+      const response = await axios.post("https://todobackend-lgkp.onrender.com/api/auth/register", formData);
       setMessage(response.data.message || "Registration successful!");
     } catch (error) {
       setMessage(error.response?.data?.error || "Registration failed!");

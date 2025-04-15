@@ -18,7 +18,7 @@ const AddTodo = () => {
 
     try {
       await axios.post(
-        "http://localhost:5006/api/todos",
+        "https://todobackend-lgkp.onrender.com/api/todos",
         { title },
         {
           headers: { Authorization: `Bearer ${tok}` }, // Send token in headers
